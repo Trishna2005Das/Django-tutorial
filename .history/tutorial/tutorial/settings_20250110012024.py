@@ -38,14 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'demo',
-    'tailwind',
-    'firstapp'
 ]
 
-TAILWIND_APP_NAME = 'firstapp'
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -58,7 +52,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'tutorial.urls'
 
-#every app has a templates folder .if not then the root folder has a template folder
+#every a
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

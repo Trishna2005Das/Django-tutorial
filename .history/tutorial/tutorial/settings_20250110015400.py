@@ -42,10 +42,7 @@ INSTALLED_APPS = [
     'firstapp'
 ]
 
-TAILWIND_APP_NAME = 'firstapp'
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
+Ti
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

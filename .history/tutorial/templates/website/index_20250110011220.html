@@ -1,14 +1,14 @@
-{% load static %} 
+{% load static %}
+(% extednds layout.html %)
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Default value{% endblock %}</title>
+    <title>Document</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    <nav>This is our nav</nav>
-    {% block content %}{% endblock %}
+    <h1>Django<h1>
 </body>
 </html>
