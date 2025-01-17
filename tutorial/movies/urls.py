@@ -4,8 +4,5 @@ from . import views
 #localhost:8000/movies
 #localhost:8000/movies/
 urlpatterns = [
-       path('', views.index, name='index'),
-       
-    
-    
+       path('home/', views.home),
 ] 
