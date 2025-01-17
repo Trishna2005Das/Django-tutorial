@@ -22,7 +22,10 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('movies/', include('movies.urls')),#include is used to include a urlconf in another urlconf
+    path('view/', views.django),
+    path('movies/', include('movies.urls')),
+    path('google/', views.google),
+    #include is used to include a urlconf in another urlconf
     #urlconf is a python module that contains a list of url patterns
     path("__reload__/", include("django_browser_reload.urls")),
     

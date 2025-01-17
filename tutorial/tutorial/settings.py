@@ -69,6 +69,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['templates',BASE_DIR /'demo/templates'],   
         'APP_DIRS': True,
+        #APP_DIRS = True tells django to look for templates in the app directory
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
