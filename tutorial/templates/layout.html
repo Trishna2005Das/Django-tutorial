@@ -1,15 +1,31 @@
-{% load static tailwind_tags %} 
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Default value{% endblock %}</title>
-    <link rel="stylesheet" href= "{% static 'style.css' %}">
-    {% tailwind_css %}
+    <title>{% block title %}Movie Recommendations{% endblock %}</title>
+    <link href="{% static 'style.css' %}" rel="stylesheet">
 </head>
-<body>
-    <nav class="bg-pink-500 text-white p-4">This is our nav</nav>
-    {% block content %}{% endblock %}
+<body class="bg-gray-900 text-white font-sans">
+    <nav class="bg-gradient-to-r from-blue-800 to-purple-800 text-white py-4 px-6 flex justify-between items-center shadow-md sticky top-0 z-50">
+        <h1 class="text-xl font-bold">MovieRec</h1>
+        <ul class="flex space-x-6">
+            <li><a href="#" class="hover:text-blue-300">Home</a></li>
+            <li><a href="#" class="hover:text-blue-300">Genres</a></li>
+            <li><a href="#" class="hover:text-blue-300">Trending</a></li>
+            <li><a href="#" class="hover:text-blue-300">Watchlist</a></li>
+        </ul>
+    </nav>
+    
+
+    <main class="container mx-auto px-4 py-6">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="bg-gray-800 py-4 text-center text-gray-400">
+        &copy; 2025 MovieRec. All rights reserved.
+    </footer>
 </body>
 </html>

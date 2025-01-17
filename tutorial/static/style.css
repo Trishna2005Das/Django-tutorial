@@ -1,9 +1,107 @@
-body{
-    background-color: rgb(225, 173, 230);
-    color: rgb(81, 168, 73);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1a1a2e;
+    color: #fff;
 }
-h1{
-    background-color: rgb(70, 168, 86);
-    color: rgb(76, 76, 92);
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #162447;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    color: #1f4068;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #e43f5a;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-links a:hover {
+    color: #00adb5;
+}
+
+.hero {
     text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #0f3460, #1a1a2e);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    border: none;
+    background: #00adb5;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background: #e43f5a;
+}
+
+.movies {
+    padding: 20px;
+}
+
+.movies h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.movie-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.movie-card {
+    text-align: center;
+    background: #1f4068;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.movie-card img {
+    border-radius: 5px;
+    width: 150px;
+    height: 200px;
+}
+
+.movie-card p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #00adb5;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #162447;
+    margin-top: 20px;
 }

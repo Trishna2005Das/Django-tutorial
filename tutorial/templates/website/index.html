@@ -1,10 +1,27 @@
 {% extends "layout.html" %}
 
-{% block <title></title> %} Home Page {% endblock %}
+{% block title %}Home - Movie Recommendations{% endblock %}
 
+{% block content %}
+<section class="text-center py-12">
+    <h1 class="text-4xl font-bold text-blue-400">Welcome to MovieRec</h1>
+    <p class="text-gray-300 mt-4">Discover movies tailored to your taste!</p>
+    <button class="mt-6 px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600">
+        Get Started
+    </button>
+</section>
 
-{% comment %} {% block content %} <h1>Home Page</h1> {% endblock %} {% endcomment %}
-
-{% block content %} <h1 class="bg-purple-600 text-white p-4 text-3xl">Home Page-tailwind</h1> 
-<p class ="bg-blue-700 text-white p-4 text-pink-100xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, officiis. </p>
-{% endblock %} 
+<section class="py-12">
+    <h2 class="text-2xl font-semibold text-blue-400 mb-6 text-center">Trending Movies</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-gray-800 rounded-lg shadow-md text-center p-4">
+            <img src="https://via.placeholder.com/150" alt="Movie 1" class="rounded-md mb-4">
+            <p class="text-gray-300">Movie Title 1</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-md text-center p-4">
+            <img src="https://via.placeholder.com/150" alt="Movie 2" class="rounded-md mb-4">
+            <p class="text-gray-300">Movie Title 2</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
